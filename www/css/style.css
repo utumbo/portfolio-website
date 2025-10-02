@@ -16,5 +16,10 @@
     font-family: 'Orbitron', sans-serif;
     display:inline-block;
     padding:0px 4px;
-    
+}
+
+.avatar-size{
+    width: 200px;
+    height: 200px;
+    right: 150px;
 }
