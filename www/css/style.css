@@ -1,0 +1,12 @@
+/* Стиль для Header */
+.terminal-header {
+    background: #0a0a12;
+    border: 2px solid #8a2be2;
+    padding: 20px;
+    text-align: center;
+}
+
+.glitch-text {
+    color: #ff00ff;
+    font-family: 'Orbitron', sans-serif;
+}
