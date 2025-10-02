@@ -10,3 +10,11 @@
     color: #ff00ff;
     font-family: 'Orbitron', sans-serif;
 }
+/*Стиль для H6 в Header*/
+.glitch-H6-text{
+    color: #05c4c9;
+    font-family: 'Orbitron', sans-serif;
+    display:inline-block;
+    padding:0px 4px;
+    
+}
