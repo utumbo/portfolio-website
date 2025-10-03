@@ -58,3 +58,27 @@
     margin: 0; /* убирает стандартные отступы у параграфов */
     line-height: 1.2; /* межстрочный интервал */
 }
+
+.container-system-boot{
+    /*size*/
+    width: 1000px; /*ширина*/
+    height: 150px; /*высота*/
+
+    /*posishon*/
+    position: absolute; /*позволяет свободно перемещать*/
+    top: 300px;
+    left: 600px;
+
+    /*внешний вид*/
+    background-color: #170d26;
+    border: 4px solid #331353;
+    border-radius: 15px;
+}
+
+/*обработка текста в system boot*/
+.text-in-system-boot{
+    color: #ff00ff;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
