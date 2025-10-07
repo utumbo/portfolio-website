@@ -43,7 +43,7 @@
 .avatar-text {
     color: #730477;
     font-family: 'Orbitron', sans-serif;
-    position: fixed;
+    position: absolute;
     top: 550px;
     left: 80px;
     display: flex;
@@ -104,16 +104,25 @@
 
 .terminal-skill{
     position: absolute;
+    width: 1000px;
+    border-radius: 4px;
+    background-color: #170d26;
     top: 600px;
     left: 600px
 }
 .terminal-project{
     position: absolute;
+    width: 1000px;
+    border-radius: 4px;
+    background-color: #170d26;
     top: 650px;
     left: 600px
 }
 .terminal-contact{
     position: absolute;
+    width: 1000px;
+    border-radius: 4px;
+    background-color: #170d26;
     top: 700px;
     left: 600px
 }
