@@ -4,11 +4,19 @@
     border: 2px solid #8a2be2;
     padding: 20px;
     text-align: center;
+    box-shadow: 
+        0 0 10px #8a2be2,
+        0 0 20px rgba(138, 43, 226, 0.5),
+        inset 0 0 15px rgba(138, 43, 226, 0.1);
 }
 
 .glitch-text {
     color: #ff00ff;
     font-family: 'Orbitron', sans-serif;
+    text-shadow: 
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff;
 }
 /*Стиль для H6 в Header*/
 .glitch-H6-text{
