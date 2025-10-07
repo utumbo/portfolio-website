@@ -12,7 +12,7 @@
 }
 /*Стиль для H6 в Header*/
 .glitch-H6-text{
-    color: #05c4c9;
+    color: #01cacb;
     font-family: 'Orbitron', sans-serif;
     display:inline-block;
     padding:0px 4px;
@@ -84,12 +84,36 @@
 }
 
 /*контейнер about me*/
-.terminal-container{
-    /*позиционирование*/
-    position: absolute;
-    top: 550px;
-    left: 600px;
+.father-container{
+    color: #ff00ff;
+    font-family: 'Orbitron', sans-serif;
+}
+.prompt{
+    color: #01cacb;
+}
 
-    /*collor all text*/
-    
+.terminal-about{
+    position: absolute;
+    width: 1000px;
+    border-radius: 4px;
+    background-color: #170d26;
+
+    top: 550px;
+    left: 600px
+}
+
+.terminal-skill{
+    position: absolute;
+    top: 600px;
+    left: 600px
+}
+.terminal-project{
+    position: absolute;
+    top: 650px;
+    left: 600px
+}
+.terminal-contact{
+    position: absolute;
+    top: 700px;
+    left: 600px
 }
