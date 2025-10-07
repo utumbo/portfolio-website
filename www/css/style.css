@@ -24,6 +24,10 @@
     font-family: 'Orbitron', sans-serif;
     display:inline-block;
     padding:0px 4px;
+    text-shadow: 
+        0 0 10px #01cacb,
+        0 0 20px #01cacb;
+    animation: blink 2s infinite;
 }
 
 .container-avatar {
@@ -39,6 +43,11 @@
     /*бордер*/
     border: 3px solid #ba2ed3;
     overflow: hidden;
+
+    /*Неоновый стиль свечения*/
+    box-shadow: 
+        0 0 15px #ba2ed3, /*первый слой*/
+        0 0 30px rgba(186, 46, 211, 0.4); /*второй слой*/
 }
 
 .avatar-size {
@@ -81,6 +90,11 @@
     background-color: #170d26;
     border: 4px solid #331353;
     border-radius: 15px;
+
+    /*Неоновый стиль свечения*/
+    box-shadow:
+        0 0 20px rgba(255, 0, 255, 0.2),
+        inset 0 0 20px rgba(255, 0, 255, 0.1);
 }
 
 /*обработка текста в system boot*/
@@ -89,12 +103,19 @@
     position: absolute;
     top: 50px;
     left: 100px;
+    
+    text-shadow: 
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff;
 }
 
 /*контейнер about me*/
 .father-container{
     color: #ff00ff;
     font-family: 'Orbitron', sans-serif;
+     box-shadow: 
+        0 0 15px #ff00ff,
+        0 0 30px rgba(255, 0, 255, 0.3);
 }
 .prompt{
     color: #01cacb;
@@ -133,4 +154,9 @@
     background-color: #170d26;
     top: 700px;
     left: 600px
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
 }
