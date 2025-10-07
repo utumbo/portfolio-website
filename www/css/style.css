@@ -82,3 +82,14 @@
     top: 50px;
     left: 100px;
 }
+
+/*контейнер about me*/
+.terminal-container{
+    /*позиционирование*/
+    position: absolute;
+    top: 550px;
+    left: 600px;
+
+    /*collor all text*/
+    
+}
