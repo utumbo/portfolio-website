@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>HACKERMAN TERMINAL</title>
 </head>
+
 <body>
-    
+    <!--Фоновые эффекты и анимации-->
+    <div class="bg-effects">
+        <div class="grid-lines"></div>
+        <div class="particles"></div>
+    </div>
+
     <header class="terminal-header">
         <h1 class="glitch-text">HACKERMAN_TERMINAL</h1>
         <h6 class="glitch-H6-text">[ CONNECTED ]</h6>
@@ -20,71 +28,65 @@
     <!--Аватарка-->
     <div class="avatar-with-caption">
         <div class="container-avatar">
-        <img class="avatar-size", src="/www/images/hackerman-avatar.png">
-    </div>
-    <div class="avatar-text">
-        <p class="avatar-text-down1">CYBER_SECURIRY_SPECIALIST</p>
-        <p class="avatar-text-down2">AND</p>
-        <p class="avatar-text-down3">EMBEDDED_DEVELOPER</p>
-    </div>
-    
-    </div>
-    
-    <!--block system boot-->
-    <div class="container-system-boot">
-        <div class="text-in-system-boot">
-            <p>SYSTEM BOOT_COMPLITE |</p>
+            <img class="avatar-size" , src="/www/images/hackerman-avatar.png">
         </div>
-    </div>
-    <!--Контент-->
 
-    <!-- Контейнер  -->
-     <div class="father-container">
-   <!-- Блок 1 -->
-<div class="terminal-about">
-    <div class="command-line">
-        <span class="prompt">$></span>
-        <span class="command">open --section=about</span>
-    </div>
-</div>
-
-<!-- Блок 2 -->
-<div class="terminal-skill">
-    <div class="command-line">
-        <span class="prompt">$></span>
-        <span class="command">open --section=skills</span>
-    </div>
-</div>
-
-<!-- Блок 3 -->
-<div class="terminal-project">
-    <div class="command-line">
-        <span class="prompt">$></span>
-        <span class="command">open --section=projects</span>
-    </div>
-</div>
-
-<!-- Блок 4 -->
-<div class="terminal-contact">
-    <div class="command-line">
-        <span class="prompt">$></span>
-        <span class="command">open --section=contact</span>
-    </div>
-    </div>
-</div>
-    <!--информация User и Hard Skils-->
-    <div class="content-box">
-        <h2 id="user">> USER_PROFILE</h2>
-        <div id="content-text">
-            <p>> NAME: ANTON RUPP</p>
-            <p>> RANK: ELITE_HACK</P>
-            <p>> SPECIALIZATION: EMBEDDED DEVELOPER</p>
-            <p>> STATUS: [REDACTED]</p>
-            <p>> MISSION: BREAKING_SYSTEMS</p>
+        <div class="avatar-text">
+            <p class="avatar-text-down1">CYBER_SECURIRY_SPECIALIST</p>
+            <p class="avatar-text-down2">AND</p>
+            <p class="avatar-text-down3">EMBEDDED_DEVELOPER</p>
         </div>
-    </div>
-    <!--Футер-->
 
-    <script src="js/script.js"></script>
+    </div>
+
+
+    <div class="content-section">
+        <!--block system boot-->
+        <div class="container-system-boot">
+            <div class="text-in-system-boot">
+                <h1>> SYSTEM BOOT_COMPLITE</h1>
+                <h1>> WELCOME_TO_MY_DOMAIN</h1>
+            </div>
+
+            <!--Навигация терминала-->
+            <nav class="command-nav">
+                <!--каждая команда должна открываться при кликах-->
+                <div class="command-item" data-target="about">
+                    <span class="command-prompt">$></span>
+                    <span class="command-text">>open --section=about</span>
+                </div>
+
+                <div class="command-item" data-target="skills">
+                    <span class="command-prompt">$></span>
+                    <span class="command-text">>open --section=skills</span>
+                </div>
+
+                <div class="command-item" data-target="project">
+                    <span class="command-prompt">$></span>
+                    <span class="command-text">>open --section=project</span>
+                </div>
+
+                <div class="command-item" data-target="contact">
+                    <span class="command-prompt">$></span>
+                    <span class="command-text">>open --section=contact</span>
+                </div>
+            </nav>
+
+
+            <!--информация User и Hard Skils-->
+            <div class="content-box">
+                <h2 id="user">> USER_PROFILE</h2>
+                <div id="content-text">
+                    <p>> NAME: ANTON RUPP</p>
+                    <p>> RANK: ELITE_HACK</P>
+                    <p>> SPECIALIZATION: EMBEDDED DEVELOPER</p>
+                    <p>> STATUS: [REDACTED]</p>
+                    <p>> MISSION: BREAKING_SYSTEMS</p>
+                </div>
+            </div>
+            <!--Футер-->
+        </div>
+        <script src="js/script.js"></script>
 </body>
+
 </html>
