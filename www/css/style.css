@@ -52,38 +52,50 @@ body {
 }
 
 /*Анимация частиц на фоне*/
-.particles::before{
+.particles::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
 
     background: radial-gradient(circle at 20% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 20% 80%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
-    
+        radial-gradient(circle at 20% 80%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+
     animation: float 20s infinite liner;
 }
 
 /*анимация лавующего движения*/
-@keyframes float{
-    0%, 100%{
+@keyframes float {
+
+    0%,
+    100% {
         transform: translate(0, 0) rotate(0deg);
     }
-    50%{
+
+    50% {
         transform: translate(-10px, -10px) rotate(180deg);
     }
 }
 
+.terminal-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Стиль для Header */
 .terminal-header {
-    background: #0a0a12;
-    border: 2px solid #8a2be2;
+    background: var(--terminal-bg);
+    border: 2px solid var(--neon-purple);
     padding: 20px;
     text-align: center;
-    box-shadow:
-        0 0 10px #8a2be2,
-        0 0 20px rgba(138, 43, 226, 0.5),
-        inset 0 0 15px rgba(138, 43, 226, 0.1);
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.3);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    border-bottom: none;
 }
 
 .glitch-text {
