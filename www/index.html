@@ -1,85 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap"
-        rel="stylesheet">
+    <title>// HACKERMAN TERMINAL //</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>HACKERMAN TERMINAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!--Фоновые эффекты и анимации-->
+    <!-- Фоновый эффект -->
     <div class="bg-effects">
         <div class="grid-lines"></div>
         <div class="particles"></div>
     </div>
-    <!--хедер-->
+
+    <!-- Главный контейнер -->
     <div class="terminal-container">
+        <!-- Хедер -->
         <header class="terminal-header">
             <div class="header-glitch">
-                <span class="glitch-text">HACKERMAN_TERMINAL></span>
+                <span class="glitch-text" data-text="HACKERMAN_TERMINAL">HACKERMAN_TERMINAL</span>
             </div>
             <div class="status-bar">
-                <span class="status-item">[ CONNECTED ]</span>
-                <span class="status-item">[ ENCRYPTED ]</span>
-                <span class="status-item">[ USER: ROOT ]</span>
+                <span class="status-item">[CONNECTED]</span>
+                <span class="status-item">[ENCRYPTED]</span>
+                <span class="status-item">[USER: ROOT]</span>
             </div>
         </header>
 
-        <main class="main-contet">
-            <!--Аватарка-->
-            <div class="avatar-with-caption">
-                <div class="container-avatar">
-                    <img class="avatar-size" , src="/www/images/hackerman-avatar.png">
+        <!-- Основной контент -->
+        <main class="main-content">
+            <!-- Левая колонка - Аватар -->
+            <div class="avatar-section">
+                <div class="avatar-frame">
+                    <img src="images/hackerman-avatar.png" alt="HACKERMAN" class="avatar">
+                    <div class="avatar-overlay">
+                        <div class="scan-line"></div>
+                        <div class="pulse-ring"></div>
+                    </div>
                 </div>
-
-                <div class="avatar-text">
-                    <p class="avatar-text-down1">CYBER_SECURIRY_SPECIALIST</p>
-                    <p class="avatar-text-down2">AND</p>
-                    <p class="avatar-text-down3">EMBEDDED_DEVELOPER</p>
+                <div class="user-info">
+                    <h3 class="username">> HACKERMAN</h3>
+                    <p class="user-title">CYBER_SECURITY_SPECIALIST</p>
                 </div>
-
             </div>
 
-
+            <!-- Правая колонка - Контент -->
             <div class="content-section">
-                <!--block system boot-->
-                <div class="container-system-boot">
-                    <div class="text-in-system-boot">
-                        <h1>> SYSTEM BOOT_COMPLITE</h1>
+                <!-- Приветствие -->
+                <div class="greeting-box">
+                    <div class="typewriter">
+                        <h1>> SYSTEM BOOT_COMPLETE</h1>
                         <h1>> WELCOME_TO_MY_DOMAIN</h1>
                     </div>
+                </div>
 
-                    <!--Навигация терминала-->
-                    <nav class="command-nav">
-                        <!--каждая команда должна открываться при кликах-->
-                        <div class="command-item" data-target="about">
-                            <span class="command-prompt">$></span>
-                            <span class="command-text">>open --section=about</span>
-                        </div>
+                <!-- Навигация -->
+                <nav class="command-nav">
+                    <div class="command-item" data-target="about">
+                        <span class="command-prompt">$></span>
+                        <span class="command-text">open --section=about</span>
+                    </div>
+                    <div class="command-item" data-target="skills">
+                        <span class="command-prompt">$></span>
+                        <span class="command-text">open --section=skills</span>
+                    </div>
+                    <div class="command-item" data-target="projects">
+                        <span class="command-prompt">$></span>
+                        <span class="command-text">open --section=projects</span>
+                    </div>
+                    <div class="command-item" data-target="contact">
+                        <span class="command-prompt">$></span>
+                        <span class="command-text">open --section=contact</span>
+                    </div>
+                </nav>
 
-                        <div class="command-item" data-target="skills">
-                            <span class="command-prompt">$></span>
-                            <span class="command-text">>open --section=skills</span>
-                        </div>
+                <!-- Секции контента -->
+                <section id="about" class="content-box active">
+                    <h2>> USER_PROFILE</h2>
+                    <div class="content-text">
+                        <p>> NAME: [ВАШЕ ИМЯ]</p>
+                        <p>> RANK: ELITE_HACKER</p>
+                        <p>> SPECIALIZATION: BACKEND_DEVELOPMENT</p>
+                        <p>> STATUS: [REDACTED]</p>
+                        <p>> MISSION: BREAKING_SYSTEMS</p>
+                    </div>
+                </section>
 
-                        <div class="command-item" data-target="project">
-                            <span class="command-prompt">$></span>
-                            <span class="command-text">>open --section=project</span>
-                        </div>
-
-                        <div class="command-item" data-target="contact">
-                            <span class="command-prompt">$></span>
-                            <span class="command-text">>open --section=contact</span>
-                        </div>
-                    </nav>
-
-
-                    <!--секция для about-->
+                <!--секция для about-->
                     <section id="about" class="content-box">
                         <h2 id="user">> USER_PROFILE</h2>
                         <div id="content-text">
@@ -127,46 +135,36 @@
                             </div>
                         </div>
                     </section>
-
-                    <section id="contact" class="content-box">
-                        <h2>NETWORK_NODES</h2>
-                        <div class="contact-links">
-                            <!--Github-->
-                            <a href="https://github.com/utumbo" class="contact-links">
-                                <span class="link-icon">[GH]</span>
-                                <span>GITHUB</span>
-                            </a>
-                        </div>
-
-                        <!--Telegramm-->
-                        <div class="contact-links">
-                            <a href="https://t.me/MrAvispon" class="contact-link">
-                                <span class="link-icon">[TG]</span>
-                                <span>TELEGRAM</span>
-                            </a>
-                        </div>
-
-                        <!--Email-->
-                        <div class="contact-links">
-                            <a href="mailto:avispon@bk.ru" class="contact-link">
-                                <span class="link-icon">[TG]</span>
-                                <span>Email</span>
-                            </a>
-                        </div>
-
-                    </section>
+                <section id="contact" class="content-box">
+                    <h2>> NETWORK_NODES</h2>
+                    <div class="contact-links">
+                        <a href="https://github.com" class="contact-link">
+                            <span class="link-icon">[GH]</span>
+                            <span>GITHUB</span>
+                        </a>
+                        <a href="https://t.me" class="contact-link">
+                            <span class="link-icon">[TG]</span>
+                            <span>TELEGRAM</span>
+                        </a>
+                        <a href="mailto:your@email.com" class="contact-link">
+                            <span class="link-icon">[ML]</span>
+                            <span>ENCRYPTED_MAIL</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
         </main>
-        <!--Футер-->
+
+        <!-- Футер -->
         <footer class="terminal-footer">
             <div class="footer-text">
-                <span class="blink">>[SYSTEM_ACTIVE]</span>
+                <span class="blink">[SYSTEM_ACTIVE]</span>
                 <span>// TERMINAL_v1.0 //</span>
-                <span class="blink">>[SECURE]</span>
+                <span class="blink">[SECURE]</span>
             </div>
         </footer>
     </div>
-    </div>
+
     <script src="js/script.js"></script>
 </body>
-
 </html>
