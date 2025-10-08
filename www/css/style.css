@@ -155,3 +155,26 @@
     top: 700px;
     left: 600px
 }
+
+.content-box{
+    position: absolute;
+    width: 1000px;
+    top: 800px;
+    left: 600px;
+    background-color: #170d26;
+    border: 4px solid #331353;
+    border-radius: 15px;
+    
+}
+
+#user{
+    color: #01cacb;
+}
+
+#content-text{
+    background-color: #170d26;
+    border: 4px solid #331353;
+    border-radius: 15px;    
+    color:#ff00ff;
+}
+
