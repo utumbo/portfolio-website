@@ -514,4 +514,11 @@ body {
             padding: 10px 15px;
         }
     }
+
+    main-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px 10px; 
+    }
+    
 }
